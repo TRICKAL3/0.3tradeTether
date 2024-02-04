@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.3trade Tether - Upload Proof of Payment</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        .note {
+            color: #888;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Upload Proof of Payment</h1>
+    </header>
+
+    <section>
+        <h2>Proof of Payment Upload:</h2>
+
+        <form>
+            <label for="proofOfPayment">Select File:</label>
+            <input type="file" id="proofOfPayment" name="proofOfPayment" accept="image/*" />
+
+            <h2>your receiving details :</h2>
+
+            <label for="binanceId">Binance ID:</label>
+            <input type="text" id="binanceId" name="binanceId" placeholder="Enter your Binance ID" />
+
+            <label for="walletAddress">Wallet Address:</label>
+            <input type="text" id="walletAddress" name="walletAddress" placeholder="Enter your Wallet Address" />
+
+            <button type="button" onclick="submitForm()">Submit</button>
+        </form>
+
+        <p class="note">Note: When sending to a wallet address, we deduct 1 from your total USDT.</p>
+    </section>
+
+    <script>
+        function submitForm() {
+            // Add code to handle form submission
+            alert("Form submitted successfully!");
+        }
+    </script>
+</body>
+
+</html>

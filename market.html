@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0.3trade Tether Market</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            background-color: #333;
+            padding: 20px 0;
+            text-align: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        select {
+            padding: 10px;
+            margin: 10px 0;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: #4caf50;
+            color: #fff;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>PayWith</h1>
+    </header>
+
+    <section>
+        <h2>Choose Payment Method:</h2>
+
+        <label for="paymentMethod">Payment Method:</label>
+        <select id="paymentMethod" name="paymentMethod">
+            <option value="nationalBank">National Bank (1008451636)</option>
+            <option value="airtelMoney">Airtel Money (0997407598 - Patrick Thala)</option>
+            <option value="tnmMpamba">TNM Mpamba (0883230889 - Patrick Thala)</option>
+            <!-- Add more payment methods as needed -->
+        </select>
+
+        <button onclick="payAndContinue()">Pay and Continue</button>
+    </section>
+
+    <script>
+        function payAndContinue() {
+            var selectedPaymentMethod = document.getElementById("paymentMethod").value;
+            alert("You have selected: " + selectedPaymentMethod + "\nPay and Continue");
+            
+            // Redirect to prof.html
+            window.location.href = "prof.html";
+        }
+    </script>
+</body>
+
+</html>
